@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>A</key>
+	<array>
+
+	</array>
+	<key>B</key>
+	<array>
+		<string>Barra fuba</string>
+		<string>Bourke Street Bakery</string>
+	</array>
+	<key>C</key>
+	<array>
+		<string>Cafe Deadend</string>
+		<string>Cafe Loisl</string>
+		<string>Cafe Lore</string>
+		<string>Confessional</string>
+	</array>
+	<key>D</key>
+	<array>
+		<string>Donostia</string>
+	</array>
+	<key>E</key>
+	<array>
+
+	</array>
+	<key>F</key>
+	<array>
+		<string>Fiveleaves</string>
+		<string>Forkee Restaurant</string>
+	</array>
+	<key>G</key>
+	<array>
+		<string>Grahamavenuemeats</string>
+	</array>
+	<key>H</key>
+	<array>
+		<string>Haighschocolate</string>
+		<string>Homei</string>
+	</array>
+	<key>I</key>
+	<array>
+
+	</array>
+	<key>J</key>
+	<array>
+
+	</array>
+	<key>K</key>
+	<array>
+
+	</array>
+	<key>L</key>
+	<array>
+
+	</array>
+	<key>M</key>
+	<array>
+
+	</array>
+	<key>N</key>
+	<array>
+
+	</array>
+	<key>O</key>
+	<array>
+
+	</array>
+	<key>P</key>
+	<array>
+		<string>Palominoespresso</string>
+		<string>Petiteoyster</string>
+		<string>Posatelier</string>
+	</array>
+	<key>Q</key>
+	<array>
+
+	</array>
+	<key>R</key>
+	<array>
+		<string>Royaloak</string>
+	</array>
+	<key>S</key>
+	<array>
+
+	</array>
+	<key>T</key>
+	<array>
+		<string>Teakha</string>
+		<string>Thai Cafe</string>
+		<string>Traif</string>
+	</array>
+	<key>U</key>
+	<array>
+		<string>Upstate</string>
+	</array>
+	<key>W</key>
+	<array>
+		<string>Waffle Wolf</string>
+	</array>
+
+	<key>X</key>
+	<array>
+
+	</array>
+
+	<key>Y</key>
+	<array>
+
+	</array>
+
+	<key>Z</key>
+	<array>
+
+	</array>	
+</dict>
+</plist>

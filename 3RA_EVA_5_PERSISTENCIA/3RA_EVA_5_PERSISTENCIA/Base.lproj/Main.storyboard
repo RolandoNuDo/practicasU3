@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_RA_EVA_5_PERSISTENCIA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUD-w4-uY5">
+                                <rect key="frame" x="271" y="108" width="59" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Guardad"/>
+                                <connections>
+                                    <action selector="btnGuardad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OL7-Ay-Na9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dc-2C-f2H">
+                                <rect key="frame" x="285" y="166" width="31" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Leer"/>
+                                <connections>
+                                    <action selector="btnLeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdh-uz-pXY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23l-gw-OMO">
+                                <rect key="frame" x="279" y="237" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Etg-cH-eJ8">
+                                <rect key="frame" x="94" y="37" width="414" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80732575261780104" green="0.80732575261780104" blue="0.80732575261780104" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="23l-gw-OMO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XU4-Nd-xIb"/>
+                            <constraint firstItem="Etg-cH-eJ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZUl-Jb-cNH"/>
+                            <constraint firstItem="5dc-2C-f2H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ziw-Q0-n05"/>
+                            <constraint firstItem="Etg-cH-eJ8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="baD-7L-Vho"/>
+                            <constraint firstItem="23l-gw-OMO" firstAttribute="top" secondItem="5dc-2C-f2H" secondAttribute="bottom" constant="40" id="gDn-Fp-Ik3"/>
+                            <constraint firstItem="Etg-cH-eJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rTV-wz-ejJ"/>
+                            <constraint firstItem="5dc-2C-f2H" firstAttribute="top" secondItem="mUD-w4-uY5" secondAttribute="bottom" constant="29" id="rjJ-8p-ezG"/>
+                            <constraint firstItem="mUD-w4-uY5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="scI-qg-NQi"/>
+                            <constraint firstItem="mUD-w4-uY5" firstAttribute="top" secondItem="Etg-cH-eJ8" secondAttribute="bottom" constant="41" id="yJs-8u-gay"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Etg-cH-eJ8" secondAttribute="trailing" id="yRv-vI-dV0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblText" destination="23l-gw-OMO" id="AUl-CQ-6tc"/>
+                        <outlet property="txtFldDatos" destination="Etg-cH-eJ8" id="Xot-dD-2zn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>

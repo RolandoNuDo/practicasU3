@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EVA3_6_PERSISTENCIA_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="STp-Pb-AIo">
+                                <rect key="frame" x="241" y="47" width="118" height="31"/>
+                                <animations/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rVU-2P-Wf9">
+                                <rect key="frame" x="241" y="111" width="118" height="31"/>
+                                <animations/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ke4-3p-H1C">
+                                <rect key="frame" x="241" y="179" width="118" height="31"/>
+                                <animations/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEv-h6-hro">
+                                <rect key="frame" x="73" y="255" width="56" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="btnGuardar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJs-gi-5AF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su5-2w-e1D">
+                                <rect key="frame" x="68" y="293" width="66" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Visualizar"/>
+                                <connections>
+                                    <action selector="btnVisualizar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ioj-q0-p0q"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lLe-j8-SUf">
+                                <rect key="frame" x="40" y="428" width="492" height="128"/>
+                                <animations/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Infornacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IE-3U-dNe">
+                                <rect key="frame" x="68" y="337" width="86" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="STp-Pb-AIo" secondAttribute="trailing" id="0sD-bg-osK"/>
+                            <constraint firstItem="Su5-2w-e1D" firstAttribute="top" secondItem="gEv-h6-hro" secondAttribute="bottom" constant="8" id="16B-Vb-js5"/>
+                            <constraint firstItem="ke4-3p-H1C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5fX-8G-tbf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rVU-2P-Wf9" secondAttribute="trailing" id="Aw9-rf-cnp"/>
+                            <constraint firstItem="STp-Pb-AIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FFT-xX-urt"/>
+                            <constraint firstItem="STp-Pb-AIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="Owr-fC-Qh6"/>
+                            <constraint firstItem="rVU-2P-Wf9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="T8w-ki-tkg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lLe-j8-SUf" secondAttribute="trailing" constant="10" id="TSD-ZK-9PY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ke4-3p-H1C" secondAttribute="trailing" id="XZw-Xo-GF8"/>
+                            <constraint firstItem="Su5-2w-e1D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZJl-P8-9Re"/>
+                            <constraint firstItem="gEv-h6-hro" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPq-Ek-YK8"/>
+                            <constraint firstItem="gEv-h6-hro" firstAttribute="top" secondItem="ke4-3p-H1C" secondAttribute="bottom" constant="46" id="fXA-oP-Vco"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lLe-j8-SUf" secondAttribute="bottom" constant="44" id="hJG-kr-RRe"/>
+                            <constraint firstItem="lLe-j8-SUf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="koR-wQ-g9z"/>
+                            <constraint firstItem="ke4-3p-H1C" firstAttribute="top" secondItem="rVU-2P-Wf9" secondAttribute="bottom" constant="38" id="kya-4A-pvW"/>
+                            <constraint firstItem="1IE-3U-dNe" firstAttribute="top" secondItem="Su5-2w-e1D" secondAttribute="bottom" constant="14" id="mKh-du-Dci"/>
+                            <constraint firstItem="rVU-2P-Wf9" firstAttribute="top" secondItem="STp-Pb-AIo" secondAttribute="bottom" constant="34" id="mRl-Qf-yHd"/>
+                            <constraint firstItem="1IE-3U-dNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oG2-ui-xCT"/>
+                            <constraint firstItem="lLe-j8-SUf" firstAttribute="top" secondItem="1IE-3U-dNe" secondAttribute="bottom" constant="70" id="wOp-yk-MuF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblInfo" destination="1IE-3U-dNe" id="l4c-AQ-oin"/>
+                        <outlet property="txtVwDatos" destination="lLe-j8-SUf" id="zHZ-Ty-PdO"/>
+                        <outletCollection property="misSliders" destination="STp-Pb-AIo" collectionClass="NSMutableArray" id="sf0-QA-5t9"/>
+                        <outletCollection property="misSliders" destination="rVU-2P-Wf9" collectionClass="NSMutableArray" id="v3m-32-bn1"/>
+                        <outletCollection property="misSliders" destination="ke4-3p-H1C" collectionClass="NSMutableArray" id="3lI-46-wu2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>
